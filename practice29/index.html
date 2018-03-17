@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function do_math(num1, num2, operator) {
+            var add = num1 + num2;
+            var sub = num1 - num2;
+            var mult = num1 * num2;
+            var divi = num1 / num2;
+
+            if (operator === '+') {
+                console.log("it adds them to " + add);
+                console.log();
+            }
+            else if (operator === '-') {
+                console.log("it subtracts them to " + sub);
+            }
+            else if (operator === '*') {
+                console.log("it multiplies them to " + mult);
+            }
+            else if(operator === '/') {
+                console.log("it divides them to " + divi);
+            }
+        }
+
+        do_math(2062,1625,'+')
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

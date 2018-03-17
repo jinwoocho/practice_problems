@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function find_middle_letters(str) {
+            if(str.length % 2 == 0){
+                var divide = str.length / 2;
+                var middle = str.charAt(divide);
+                console.log(middle);
+            } else if (str.length % 2 !== 0){
+                var divide = str.length / 2;
+                var middle = str.floor(divide);
+                console.log(middle);
+            }
+        }
+        find_middle_letters("hello")
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

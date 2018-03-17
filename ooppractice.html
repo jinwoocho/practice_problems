@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script>
+        $().ready(startSite);
+        var jinWoo = null;
+        var josh = null;
+        function startSite (){
+            console.log('startSite');
+            jinWoo = new ConstructorFunction;
+            //josh = new ConstructorFunction;
+            jinWoo.init()
+        }
+        function ConstructorFunction(){
+            var self = this;
+            this.btn = $('#btn');
+            console.log(this.btn);
+            console.log(self);
+            this.init = function(){
+                this.btn.click(self.print);
+            };
+            this.print = function () {
+                $('#print').text('you clicked me');
+            }
+        }
+
+    </script>
+</head>
+<body>
+<button id="btn">click me</button>
+<div id="print"></div>
+</body>
+</html>
